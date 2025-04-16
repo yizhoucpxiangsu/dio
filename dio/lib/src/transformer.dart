@@ -49,7 +49,7 @@ abstract class Transformer {
         if (value == null) {
           return key;
         }
-        return '$key=${Uri.encodeQueryComponent(value.toString())}';
+        return '$key=${Uri.encodeComponent(value.toString())}';
       },
       listFormat: listFormat,
     );
